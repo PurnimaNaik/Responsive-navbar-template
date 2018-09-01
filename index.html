@@ -1,0 +1,25 @@
+<html>
+
+<head>
+  <title>Responsive Navbar</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/reset.css">
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/base.css">
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/app.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+</head>
+
+<body>
+  <ul class="Navbar" id="navbarList">
+    <li onClick="setActive((this.children[0].children[0].getAttribute('title')))"><a class="active" href="#home"> <img src="assets/icons/home_active.svg" title="home"></br>Home</a></li>
+    <li onClick="setActive((this.children[0].children[0].getAttribute('title')))"><a href="#usage"> <img src="assets/icons/usage.svg" title="usage"></br>Usage</a></li>
+    <li onClick="setActive((this.children[0].children[0].getAttribute('title')))"><a href="#meter"> <img src="assets/icons/meter.svg" title="meter"></br>Meter</a></li>
+    <li onClick="setActive((this.children[0].children[0].getAttribute('title')))"><a href="#devices"> <img src="assets/icons/devices.svg" title="devices"></br>Devices</a></li>
+    <li onClick="setActive((this.children[0].children[0].getAttribute('title')))"><a href="#settings"> <img src="assets/icons/settings.svg" title="settings"></br>Settings</a></li>
+    <li id="feedback_listitem" onClick="setActive((this.children[0].children[0].getAttribute('title')))"><a href="#feedback"> <img src="assets/icons/feedback.svg" title="feedback"></br>Feedback</a></li>
+  </ul>
+
+  <script type="text/javascript" src="assets/scripts/app.js"></script>
+</body>
+
+</html>
